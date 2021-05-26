@@ -1,0 +1,84 @@
+name: binder
+channels:
+  - conda-forge
+  - nodefaults
+dependencies:
+  # async_retriever
+  - aiodns
+  - aiohttp
+  - aiohttp-client-cache
+  - aiosqlite
+  - brotlipy
+  - cchardet
+  - cytoolz
+  - nest-asyncio
+  - orjson
+  - setuptools
+
+  # pygeoogc deps
+  - defusedxml
+  - owslib
+  - pyyaml
+  - pyproj
+  - requests
+  - requests-cache
+  - setuptools
+  - shapely
+  - simplejson
+  - urllib3
+
+  # pygeoutils deps
+  - affine
+  - geopandas
+  - numpy
+  - netcdf4
+  - orjson
+  - rasterio
+  - xarray
+
+  # pynhd deps
+  - networkx
+  - pandas
+  - pyarrow
+
+  # py3dep deps
+  - click
+
+  # pygeohydro deps
+  - folium
+  - lxml
+  - matplotlib-base
+  - openpyxl
+
+  # pydaymet deps
+  - dask-core
+  - scipy
+
+  # optional deps to speed up xarray and geopandas
+  - bottleneck
+  - rtree
+  - pygeos
+
+  # Other third-party deps
+  - hvplot
+  - geoviews
+  - cartopy
+  - cmocean
+  - mapclassify
+  - contextily
+  - colorcet
+  - tqdm
+  - pytables
+  - jupyterlab
+  - jupyterlab_widgets
+  - ipywidgets
+
+  - pip
+  - pip:
+    - git+https://github.com/cheginit/async_retriever.git
+    - git+https://github.com/cheginit/pygeoogc.git
+    - git+https://github.com/cheginit/pygeoutils.git
+    - git+https://github.com/cheginit/pynhd.git
+    - git+https://github.com/cheginit/py3dep.git
+    - git+https://github.com/cheginit/pydaymet.git
+    - git+https://github.com/cheginit/pygeohydro.git
